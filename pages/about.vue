@@ -2,7 +2,6 @@
 	<div class="page-canvas" ref='vantaRef'>
 		<Header></Header>
 		<Body></Body>
-		<Footer></Footer>
 	</div>
 </template>
 
@@ -10,7 +9,7 @@
 import TOPOLOGY from 'vanta/dist/vanta.topology.min'
 
 export default {
-	name: 'IndexPage',
+	name: 'AboutPage',
 	mounted() {
 		this.vantaEffect = TOPOLOGY({
 			el: this.$refs.vantaRef,

@@ -4,22 +4,35 @@
 			<div>
 				<Logo></Logo>
 			</div>
-			<nav>
-				<ul>
-					<li>
-						<a href="https://shanjiang.io/shan_jiang_resume.pdf" target="_blank">Resume</a>
-					</li>
-					<li>
-						<NuxtLink to="/about">About</NuxtLink>
-					</li>
-					<li>
-						<NuxtLink to="/contact">Contact</NuxtLink>
-					</li>
-				</ul>
-			</nav>
+			<div>
+				<nav>
+					<ul>
+						<li>
+							<a href="https://shanjiang.io/shan_jiang_resume.pdf" target="_blank">Resume</a>
+						</li>
+						<li v-for="(name, url) in navs">
+							<NuxtLink :to="'/' + url">{{ name }}</NuxtLink>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 </template>
+
+<script>
+export default {
+	name: 'Header',
+	data() {
+		return {
+			navs: {
+				about: 'About',
+				contact: 'Contact',
+			}
+		}
+	}
+}
+</script>
 
 <style lang="scss">
 header {
@@ -41,11 +54,15 @@ header {
 
 			li {
 				a {
-					color: #333;
 					font-size: 1rem;
 					font-weight: 600;
 					text-decoration: none;
 					text-transform: lowercase;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
 				}
 			}
 		}

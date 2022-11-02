@@ -1,11 +1,24 @@
+$brand-one: #ddc086;
+$brand-dark: #333;
+
+:root {
+  --brand-one: #{$brand-one};
+  --brand-dark: #{$brand-dark};
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: var(--brand-dark);
+
+  &::selection {
+    background-color: lighten($brand-one, 12%);
+  }
 }
 
 html {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', 'Helvetica', Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -27,5 +40,15 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.05);
     content: '';
+  }
+}
+
+.container {
+  max-width: 992px;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  &-fluid {
+    max-width: 1400px;
   }
 }

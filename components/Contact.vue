@@ -1,16 +1,21 @@
 <template>
 	<main>
 		<div class="container">
-			<h1>about</h1>
+			<h1>contact</h1>
 			<div class="about-inner">
 				<div>
 					<p>
-						<img src="../assets/images/9O6A9051-Edit.jpg" alt="Shan Jiang portrait">
+						Shoot me a message
+						<br>
+						<a href="mailto:jiang_shan@live.com">jiang_shan@live.com</a>
 					</p>
+
 				</div>
 				<div>
 					<p>
-						Shan is a dynamic front-end web developer with over four years of professional experience building WordPress websites and web portals for various industries. He is proficient with PHP, SCSS, jQuery, and modern JavaScript libraries/frameworks. He pays attention to details and aims to build pixel-perfect web projects.
+						Find me on social networks
+						<br>
+						<SocialNav></SocialNav>
 					</p>
 				</div>
 			</div>

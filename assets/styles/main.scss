@@ -1,9 +1,11 @@
 $brand-one: #ddc086;
 $brand-dark: #333;
+$brand-light: #fff;
 
 :root {
   --brand-one: #{$brand-one};
   --brand-dark: #{$brand-dark};
+  --brand-light: #{$brand-light};
 }
 
 * {

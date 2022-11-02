@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<h1>Hello! I'm Shan, <br> a Front End Developer <br> and Photographer.</h1>
+		<h1>Hi! I'm Shan, <br> a Front End Developer <br> based in Vancouver, BC.</h1>
 	</main>
 </template>
 
@@ -21,7 +21,7 @@ main {
 
 	h1 {
 		font-size: 52px;
-		font-weight: 500;
+		font-weight: 700;
 	}
 }
 </style>

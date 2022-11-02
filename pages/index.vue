@@ -1,8 +1,6 @@
 <template>
 	<div class="page-canvas" ref='vantaRef'>
-		<Header></Header>
-		<Body></Body>
-		<Footer></Footer>
+		<Header></Header><Body></Body><Footer></Footer>
 	</div>
 </template>
 

@@ -16,7 +16,7 @@
 							<a href="https://shanjiang.io/shan_jiang_resume.pdf" target="_blank">Resume</a>
 						</li>
 						<li v-for="(name, url) in navs">
-							<NuxtLink :to="'/' + url">{{ name }}</NuxtLink>
+							<a :href="'/' + url">{{ name }}</a>
 						</li>
 					</ul>
 				</nav>

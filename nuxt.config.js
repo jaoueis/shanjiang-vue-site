@@ -27,6 +27,7 @@ export default {
 			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap' }
 		],
 		script: [
+			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js' },
 			{ src: 'https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js' },
 			{ src: 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js' }
 		]
@@ -39,6 +40,7 @@ export default {
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [
+		{ src: '~/plugins/calcHeight.js', mode: 'client' }
 	],
 
 	// Auto import components: https://go.nuxtjs.dev/config-components

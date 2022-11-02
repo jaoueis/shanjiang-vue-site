@@ -32,7 +32,7 @@ html {
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
-  min-height: 100vh;
+  min-height: var(--app-height);
 
   &:before {
     position: absolute;

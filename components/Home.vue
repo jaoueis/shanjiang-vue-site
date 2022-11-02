@@ -16,6 +16,7 @@ export default {
 h1 {
 	font-size: 2.25rem;
 	font-weight: 700;
+	line-height: normal;
 
 	@media (min-width: 992px) {
 		font-size: 3.25rem;

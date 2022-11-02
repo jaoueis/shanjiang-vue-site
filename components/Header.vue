@@ -46,9 +46,19 @@ export default {
 	methods: {
 		toggleMenu() {
 			this.isActive = this.isActive === 'false' ? 'true' : 'false';
+
+			const body = document.querySelector('body');
+
+			if (this.isActive === 'true') {
+				body.style.overflow = 'hidden';
+			} else {
+				body.removeAttribute('style');
+			}
 		},
 		onResize() {
-			this.isActive = 'false'
+			if (window.innerWidth >= 992) {
+				this.isActive = 'false'
+			}
 		}
 	}
 }
